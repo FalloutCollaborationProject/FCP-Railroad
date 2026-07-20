@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ The Railroad __________-->
+
+    <!--_____ Railroad Apparel _____-->
+
+    <!-- Railroad Armored Coat -->
+
+    <ThingDef ParentName="FCP_Armor_Machineable_Base">
+        <defName>FCP_Apparel_Railroad_Armored_Coat</defName>
+        <label>Railroad armored coat</label>
+        <description>A long coat favored by Railroad agents, its lining reinforced with scavenged steel plates and hardened leather. Built to take a hit from an Institute Courser without looking like armor at a distance - the Railroad prefers its people blend in until the moment they don't.</description>
+        <recipeMaker>
+            <researchPrerequisite>FCP_Research_Railroad_Outfitters</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Apparel/Railroad_Armored_Jacket/FCP_Railroad_Armored_Jacket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>8700</WorkToMake>
+            <Mass>3.5</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <costList>
+            <Leather_Plain>70</Leather_Plain>
+            <Steel>25</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Railroad_Armored_Jacket/FCP_Railroad_Armored_Jacket</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>FCP_Railroad_Agent</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>FCP_Trade_Tag_Railroad_Apparel</li>
+        </tradeTags>
+    </ThingDef>
+
+</Defs>

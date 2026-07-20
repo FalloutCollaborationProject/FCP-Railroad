@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ The Railroad __________-->
+
+    <!--_____ Outfitting _____-->
+
+    <!-- Railroad Outfitters -->
+
+    <ResearchProjectDef>
+        <defName>FCP_Research_Railroad_Outfitters</defName>
+        <label>Railroad Outfitters</label>
+        <description>Research and develop the coats and gear worn by Railroad agents, reinforcing them well enough to survive a firefight with Institute Coursers without giving up the ability to disappear into a crowd.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Machining</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>8.00</researchViewY>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+</Defs>
