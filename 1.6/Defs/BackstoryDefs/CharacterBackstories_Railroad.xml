@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Character Backstories __________-->
+
+    <!-- Desdemona -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Desdemona_Child</defName>
+        <title>Watchful Child</title>
+        <titleShort>Watchful</titleShort>
+        <baseDesc>[PAWN_nameDef] learned early that the people who talked too much didn't last. [PAWN_pronoun] watched more than [PAWN_pronoun] spoke, remembered every face that passed through, and never mentioned what [PAWN_pronoun] noticed until it mattered.</baseDesc>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Desdemona_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Desdemona_Adult</defName>
+        <title>Railroad Leader</title>
+        <titleShort>Leader</titleShort>
+        <baseDesc>[PAWN_nameDef] leads the Railroad from behind a dozen layers of misdirection, holding the whole fractured network together by force of will. [PAWN_pronoun] has buried more agents than [PAWN_pronoun] talks about and trusts fewer people every year, but [PAWN_pronoun] has never once stopped moving synths down the line.</baseDesc>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Desdemona_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Intellectual>6</Intellectual>
+            <Shooting>4</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Doctor Carrington -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Carrington_Child</defName>
+        <title>Institute Defector's Ward</title>
+        <titleShort>Defector's Ward</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up hearing secondhand what the Institute did to people who stopped being useful to it. [PAWN_pronoun] resolved early to end up on the side that got people out, not the side that put them in a cell to begin with.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Carrington_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Carrington_Adult</defName>
+        <title>Second-in-Command</title>
+        <titleShort>Second</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the Railroad's day-to-day operations, planning dead drops and field missions with a precision that leaves no room for sentiment. [PAWN_pronoun] argues with Desdemona more than anyone else in the organization dares to, and is usually right, which doesn't make [PAWN_objective] any easier to work under.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Carrington_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Medicine>6</Medicine>
+            <Social>3</Social>
+        </skillGains>
+        <forcedTraits>
+            <Neurotic>0</Neurotic>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Tinker Tom -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_TinkerTom_Child</defName>
+        <title>Radio Tinkerer</title>
+        <titleShort>Tinkerer</titleShort>
+        <baseDesc>[PAWN_nameDef] took apart every broken radio and terminal [PAWN_pronoun] could scavenge, convinced that the wasteland's leftover tech still had secrets worth digging out. Most people found [PAWN_possessive] theories exhausting. A few found them useful.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_TinkerTom_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_TinkerTom_Adult</defName>
+        <title>Railroad Quartermaster</title>
+        <titleShort>Quartermaster</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the Railroad's gear running and its signal intercepts decoded, muttering about surveillance conspiracies half of which turn out to be true. [PAWN_possessive] gadgets have gotten agents out of tight spots more than once, even the ones that shouldn't have worked.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_TinkerTom_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Intellectual>7</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Glory -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Glory_Child</defName>
+        <title>Institute Design</title>
+        <titleShort>Design</titleShort>
+        <baseDesc>[PAWN_nameDef] was built, not born - synthesized in an Institute vat and given a combat directive instead of a childhood. What happened after [PAWN_pronoun] stopped following that directive is a subject [PAWN_pronoun] doesn't discuss.</baseDesc>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Glory_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Glory_Adult</defName>
+        <title>Liberated Synth</title>
+        <titleShort>Synth</titleShort>
+        <baseDesc>[PAWN_nameDef] is the Railroad's answer to any operation that stops being subtle. Once an Institute combat synth, now the person the Railroad sends when a dead drop turns into a firefight. [PAWN_pronoun] has no patience for anyone who still calls synths "it."</baseDesc>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Glory_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>9</Shooting>
+            <Melee>7</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Drummer Boy -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_DrummerBoy_Child</defName>
+        <title>Street Runner</title>
+        <titleShort>Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up running messages between settlements for caps, learning which alleys were shortcuts and which were traps. [PAWN_pronoun] never asked what was in the sealed notes [PAWN_pronoun] carried, and that habit of not asking is what got [PAWN_objective] noticed.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_DrummerBoy_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_DrummerBoy_Adult</defName>
+        <title>Railroad Courier</title>
+        <titleShort>Courier</titleShort>
+        <baseDesc>[PAWN_nameDef] carries Desdemona's mission briefs between safehouses, memorizing what needs memorizing and forgetting the rest on purpose. Too young to have earned anyone's trust the slow way, [PAWN_pronoun] earned it the fast way instead - by never once getting caught.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_DrummerBoy_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- High Rise -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_HighRise_Child</defName>
+        <title>Settlement Watcher</title>
+        <titleShort>Watcher</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up keeping lookout for a small trading settlement, learning to read strangers at a glance and trust that instinct over anything they said out loud.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_HighRise_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_HighRise_Adult</defName>
+        <title>Ticonderoga Runner</title>
+        <titleShort>Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] ran the Ticonderoga safehouse for years, one of the Railroad's steadiest hands until Institute coursers found the place. [PAWN_pronoun] held the door long enough for the synths inside to run. [PAWN_pronoun] didn't run with them.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_HighRise_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>6</Shooting>
+            <Melee>4</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </BackstoryDef>
+
+</Defs>

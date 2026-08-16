@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Unique Pawnkinds __________-->
+
+    <!-- Desdemona -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_Desdemona</defName>
+        <label>Desdemona</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>115</combatPower>
+        <maxGenerationAge>54</maxGenerationAge>
+        <minGenerationAge>54</minGenerationAge>
+        <apparelRequired>
+            <li>FCP_Apparel_Railroad_Armored_Coat</li>
+        </apparelRequired>
+        <apparelMoney>1200~1600</apparelMoney>
+        <weaponMoney>700~1000</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Desdemona_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Desdemona_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Doctor Carrington -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_Carrington</defName>
+        <label>Doctor Carrington</label>
+        <combatPower>95</combatPower>
+        <maxGenerationAge>58</maxGenerationAge>
+        <minGenerationAge>58</minGenerationAge>
+        <apparelMoney>800~1100</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Carrington_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Carrington_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Tinker Tom -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_TinkerTom</defName>
+        <label>Tinker Tom</label>
+        <trader>true</trader>
+        <combatPower>55</combatPower>
+        <maxGenerationAge>45</maxGenerationAge>
+        <minGenerationAge>45</minGenerationAge>
+        <apparelMoney>500~750</apparelMoney>
+        <weaponMoney>300~500</weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_TinkerTom_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_TinkerTom_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Glory -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_Glory</defName>
+        <label>Glory</label>
+        <combatPower>150</combatPower>
+        <maxGenerationAge>30</maxGenerationAge>
+        <minGenerationAge>30</minGenerationAge>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Railroad_Armored_Coat</li>
+        </apparelRequired>
+        <apparelMoney>1300~1700</apparelMoney>
+        <weaponMoney>900~1400</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Glory_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Glory_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Drummer Boy -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_DrummerBoy</defName>
+        <label>Drummer Boy</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>19</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+        <apparelMoney>300~500</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_DrummerBoy_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_DrummerBoy_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- High Rise -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_HighRise</defName>
+        <label>High Rise</label>
+        <combatPower>100</combatPower>
+        <maxGenerationAge>44</maxGenerationAge>
+        <minGenerationAge>44</minGenerationAge>
+        <apparelRequired>
+            <li>FCP_Apparel_Railroad_Armored_Coat</li>
+        </apparelRequired>
+        <apparelMoney>900~1200</apparelMoney>
+        <weaponMoney>500~800</weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_HighRise_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_HighRise_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+</Defs>

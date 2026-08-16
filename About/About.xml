@@ -16,10 +16,16 @@
             <displayName>FCP - Tools</displayName>
             <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Tools</downloadUrl>
         </li>
+        <li>
+            <packageId>Rick.FCP.Robotics</packageId>
+            <displayName>FCP - Robotics</displayName>
+            <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Robotics</downloadUrl>
+        </li>
     </modDependencies>
     <loadAfter>
         <li>Rick.FCP.Core.Tools</li>
         <li>Rick.FCP.PowerArmor</li>
+        <li>Rick.FCP.Robotics</li>
     </loadAfter>
 
 </ModMetaData>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ The Railroad __________-->
+
+    <!-- Desdemona -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Desdemona</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Desdemona</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Desdemona</firstName>
+                <lastName />
+                <gender>Female</gender>
+                <age>54</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 65, 60)</hairColor>
+                <hairDef>FCP_Hair_No_Nonsense</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doctor Carrington -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Carrington</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Carrington</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>800</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Doctor</firstName>
+                <lastName>Carrington</lastName>
+                <gender>Male</gender>
+                <age>58</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 145, 140)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Tinker Tom -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_TinkerTom</defName>
+        <pawnKind>FCP_Unique_Pawnkind_TinkerTom</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>650</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Tom</firstName>
+                <lastName />
+                <nickname>Tinker Tom</nickname>
+                <gender>Male</gender>
+                <age>45</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 80, 60)</hairColor>
+                <hairDef>FCP_Hair_Punked</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Glory -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Glory</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Glory</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>700</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Glory</firstName>
+                <lastName />
+                <gender>Female</gender>
+                <age>30</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Saw</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(140, 100, 75)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Drummer Boy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_DrummerBoy</defName>
+        <pawnKind>FCP_Unique_Pawnkind_DrummerBoy</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Drummer</firstName>
+                <lastName>Boy</lastName>
+                <gender>Male</gender>
+                <age>19</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 35)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- High Rise -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_HighRise</defName>
+        <pawnKind>FCP_Unique_Pawnkind_HighRise</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>550</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>High</firstName>
+                <lastName>Rise</lastName>
+                <gender>Male</gender>
+                <age>44</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 115, 110)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--__________ P.A.M. __________-->
+    <!-- Personality construct housed on an Assaultron chassis, matching the Yes Man / Victor
+         robot-persona precedent set in FCP-Robotics: no faction, no story/rank definitions,
+         just a name on an existing chassis PawnKind. -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_PAM</defName>
+        <label>P.A.M.</label>
+        <description>The Railroad's Predictive Analytical Machine, a pre-war statistical modeling program salvaged and rehoused in a decommissioned assaultron chassis. It calculates probabilities for every operation it's fed, delivering cold percentages on missions that get agents killed either way. Whether it actually cares about the outcomes it predicts is a question nobody in the Railroad has gotten a straight answer to, and P.A.M. isn't in the habit of volunteering one.</description>
+        <pawnKind>FCP_Pawnkind_Assaultron</pawnKind>
+        <definitions>
+            <li Class="FCP.Core.CharacterRobotNameDefinition">
+                <name>P.A.M.</name>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+</Defs>

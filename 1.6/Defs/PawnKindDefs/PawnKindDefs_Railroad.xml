@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Pawnkinds __________-->
+
+    <!--___ Base Definitions ___-->
+
+    <PawnKindDef Name="FCP_RailroadKindBase" Abstract="true">
+        <race>Human</race>
+        <defaultFactionType>FCP_Faction_Railroad</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <combatPower>90</combatPower>
+        <minGenerationAge>22</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <apparelTags>
+            <li>FCP_Railroad_Agent</li>
+        </apparelTags>
+        <apparelMoney>500~800</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- Railroad Agent (generic member) -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Pawnkind_Railroad_Agent</defName>
+        <label>Railroad agent</label>
+        <combatPower>90</combatPower>
+    </PawnKindDef>
+
+</Defs>

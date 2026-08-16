@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Factions __________-->
+
+    <!-- The Railroad -->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Railroad</defName>
+        <label>The Railroad</label>
+        <description>The Railroad is an underground network built around a single cause: finding synths who want out of the Institute and getting them free, whatever it costs. They operate in cells that barely know each other's business, trust almost no one outside their own circle, and treat every stranger as a possible courser in waiting. Safehouses move the moment they're compromised, agents work under aliases they don't explain, and leadership answers to no one but their own conscience and the people they've sworn to protect. Paranoia keeps them alive. It also means the Railroad rarely forgets a betrayal, and rarely forgives one either.</description>
+        <basicMemberKind>FCP_Pawnkind_Railroad_Agent</basicMemberKind>
+        <colorSpectrum>
+            <li>(0.5, 0.47, 0.42)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>3</maxConfigurableAtWorldCreation>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <pawnSingular>agent</pawnSingular>
+        <pawnsPlural>Railroad</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.08</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>false</canSiege>
+        <canStageAttacks>false</canStageAttacks>
+        <leaderTitle>Railroad leader</leaderTitle>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_Desdemona</li>
+        </fixedLeaderKinds>
+        <factionIconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <naturalEnemy>false</naturalEnemy>
+        <permanentEnemy>false</permanentEnemy>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    </FactionDef>
+
+</Defs>
