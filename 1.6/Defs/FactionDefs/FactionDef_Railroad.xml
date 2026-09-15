@@ -31,6 +31,29 @@
         <techLevel>Industrial</techLevel>
         <naturalEnemy>false</naturalEnemy>
         <permanentEnemy>false</permanentEnemy>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <FCP_Pawnkind_Railroad_Agent>10</FCP_Pawnkind_Railroad_Agent>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FCP_Pawnkind_Railroad_Agent>10</FCP_Pawnkind_Railroad_Agent>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FCP_Pawnkind_Railroad_Agent>10</FCP_Pawnkind_Railroad_Agent>
+                </options>
+            </li>
+        </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     </FactionDef>
 
