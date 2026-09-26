@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Railroad_Supply_Run</defName>
+        <rootSelectionWeight>0.5</rootSelectionWeight>
+        <rootMinPoints>15</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Supply Run</li>
+                <li>questName->The Next Shipment</li>
+                <li>questName->Safehouse Stock</li>
+                <li>questName->Running Medicine</li>
+                <li>questName->Keeping the Lights On</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] says a safehouse further down the line is running short on medicine, and there's no way to route a shipment there without exposing it. Get the supplies moving and the line pays for the trouble.\n\nRequirements: deliver [requiredMedicine] medicine to your stockpile within [bountyDuration_duration].</li>
+                <li>questDescription->[asker_nameFull]: "One of our stops can't hold out much longer without medicine. The line can't spare anyone to fetch it, we're stretched thin as it is. Whatever you can bring, we'll pay for."\n\nRequirements: deliver [requiredMedicine] medicine to your stockpile within [bountyDuration_duration].</li>
+                <li>questDescription->The Railroad's treasury doesn't stretch far, but medicine for a compromised safehouse takes priority over almost everything else right now. [asker_nameFull] is asking for help covering the gap.\n\nRequirements: deliver [requiredMedicine] medicine to your stockpile within [bountyDuration_duration].</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.2</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.5</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li>FCP_Faction_Railroad</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>requiredMedicine</name>
+                    <value>$(randInt(6,12))</value>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>bountyDays</name>
+                    <value>12</value>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>bountyDuration</name>
+                    <value>$(bountyDays * 60000)</value>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_WatchItemCountOnMap">
+                    <map>$map</map>
+                    <itemDef>MedicineIndustrial</itemDef>
+                    <requiredCount>$requiredMedicine</requiredCount>
+                    <outSignalComplete>medicine.Delivered</outSignalComplete>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>medicine.Delivered</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <letterDef>PositiveEvent</letterDef>
+                                <label>Supply run: delivered</label>
+                                <text>Word comes back down the line that the shipment made it through. Nobody says which safehouse, and you don't ask.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>true</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>false</addCampLootReward>
+                                <customLetterLabel>Payment from the line</customLetterLabel>
+                                <customLetterText>Payment for [requiredMedicine] units of medicine, whatever the Railroad could spare.</customLetterText>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Delay">
+                    <delayTicks>$bountyDuration</delayTicks>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Supply run: too late</label>
+                                <letterDef>NegativeEvent</letterDef>
+                                <text>The safehouse found another way, or it didn't. Either way, the line's stopped waiting on this shipment.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

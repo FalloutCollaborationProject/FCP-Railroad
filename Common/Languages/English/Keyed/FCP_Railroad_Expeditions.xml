@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Expedition Return Flavor Text __________-->
+
+	<!-- Run -->
+
+	<FCP_Rank_Expedition_Railroad_Run_1>{PAWN} moved the cargo down the line without incident, and without a name anyone could trace.</FCP_Rank_Expedition_Railroad_Run_1>
+	<FCP_Rank_Expedition_Railroad_Run_2>{PAWN} talked a nervous passenger through the whole route personally.</FCP_Rank_Expedition_Railroad_Run_2>
+	<FCP_Rank_Expedition_Railroad_Run_3>{PAWN} found the safehouse compromised and rerouted everyone through before anyone noticed.</FCP_Rank_Expedition_Railroad_Run_3>
+	<FCP_Rank_Expedition_Railroad_Run_4>{PAWN} made the run in record time and still checked every dead drop along the way.</FCP_Rank_Expedition_Railroad_Run_4>
+
+	<!-- Extraction -->
+
+	<FCP_Rank_Expedition_Railroad_Extraction_1>{PAWN} pulled the asset out clean, and the Institute is still looking in the wrong place.</FCP_Rank_Expedition_Railroad_Extraction_1>
+	<FCP_Rank_Expedition_Railroad_Extraction_2>{PAWN} got everyone out before the safehouse's cover fell apart completely.</FCP_Rank_Expedition_Railroad_Extraction_2>
+	<FCP_Rank_Expedition_Railroad_Extraction_3>{PAWN} extracted the target and left nothing behind worth following.</FCP_Rank_Expedition_Railroad_Extraction_3>
+	<FCP_Rank_Expedition_Railroad_Extraction_4>{PAWN} finished the extraction a day ahead of schedule, which nobody on the Railroad has ever complained about.</FCP_Rank_Expedition_Railroad_Extraction_4>
+
+	<!-- Deep Line -->
+
+	<FCP_Rank_Expedition_Railroad_Deepline_1>{PAWN} ran the deep line operation exactly as planned, and the cell is still standing because of it.</FCP_Rank_Expedition_Railroad_Deepline_1>
+	<FCP_Rank_Expedition_Railroad_Deepline_2>{PAWN} came back from the operation having made a call only someone who's earned that trust gets to make.</FCP_Rank_Expedition_Railroad_Deepline_2>
+	<FCP_Rank_Expedition_Railroad_Deepline_3>{PAWN} closed out the operation without losing a single person along the line.</FCP_Rank_Expedition_Railroad_Deepline_3>
+	<FCP_Rank_Expedition_Railroad_Deepline_4>{PAWN} returned from the deep line run with everything the Railroad needed, and nothing the Institute wanted them to have.</FCP_Rank_Expedition_Railroad_Deepline_4>
+
+</LanguageData>

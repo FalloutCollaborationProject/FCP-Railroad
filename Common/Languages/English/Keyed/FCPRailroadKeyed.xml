@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Liberation Contact -->
+
+	<FCP_RailroadLiberation_Title>A Quiet Warning</FCP_RailroadLiberation_Title>
+	<FCP_RailroadLiberation_Text>A Railroad contact has reached out about {0}. They won't say how they know, but they're certain {0} isn't entirely who {0} appears to be, and they'd rather make contact before anyone with worse intentions does.</FCP_RailroadLiberation_Text>
+	<FCP_RailroadLiberation_Confirm>Let them make contact</FCP_RailroadLiberation_Confirm>
+	<FCP_RailroadLiberation_RevealTitle>The Truth Comes Out</FCP_RailroadLiberation_RevealTitle>
+	<FCP_RailroadLiberation_RevealText>The Railroad's suspicion was right. {0} is a synth, and probably never knew it. Whatever the Institute intended, the Railroad isn't interested in taking away the choice of who {0} gets to be from here.</FCP_RailroadLiberation_RevealText>
+
+</LanguageData>

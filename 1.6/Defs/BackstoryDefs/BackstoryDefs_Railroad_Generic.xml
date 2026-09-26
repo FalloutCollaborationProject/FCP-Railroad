@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Generic Backstories __________-->
+
+    <!--_____ Childhood _____-->
+
+    <!-- Wasteland Orphan -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_General</defName>
+        <identifier>FCP_Backstory_Railroad_Child_General</identifier>
+        <title>Wasteland Orphan</title>
+        <titleShort>Orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] lost whatever family [PAWN_pronoun] started with somewhere along the way, and learned not to trust anyone who couldn't explain where they'd come from. It made [PAWN_objective] hard to fool and harder to approach.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>1</Social>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Forger's Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Forger</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Forger</identifier>
+        <title>Forger's Apprentice</title>
+        <titleShort>Forger's Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] learned to copy a signature, age a piece of paper, and talk past a checkpoint guard before [PAWN_pronoun] learned much else. A good forgery got people through gates that a good argument never would.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Signal Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Radio</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Radio</identifier>
+        <title>Signal Runner</title>
+        <titleShort>Signal Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up chasing radio static across dead frequencies, hunting for the handful of channels still worth listening to. [PAWN_pronoun] learned to read meaning into silence long before anyone explained why that mattered.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Safehouse Kid -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Safehouse</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Safehouse</identifier>
+        <title>Safehouse Kid</title>
+        <titleShort>Safehouse Kid</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up in and out of houses that changed owners every few months, surrounded by neighbors who never asked questions. [PAWN_pronoun] learned to pack fast and to forget addresses on purpose.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Crafting>1</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Wasteland Scout -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Scout</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Scout</identifier>
+        <title>Wasteland Scout</title>
+        <titleShort>Scout</titleShort>
+        <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood mapping safe routes between settlements, trading that knowledge for food and favors. [PAWN_pronoun] still thinks in terms of sightlines and exits.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Smuggler's Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Smuggler</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Smuggler</identifier>
+        <title>Smuggler's Runner</title>
+        <titleShort>Smuggler's Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] moved packages nobody was supposed to ask about, learning which checkpoints could be bought and which had to be avoided outright.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Rooftop Watcher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Lookout</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Lookout</identifier>
+        <title>Rooftop Watcher</title>
+        <titleShort>Rooftop Watcher</titleShort>
+        <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood watching streets from rooftops and fire escapes, learning to spot a patrol pattern before it spotted [PAWN_objective].</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Stray Sympathizer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Escort</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Escort</identifier>
+        <title>Stray Sympathizer</title>
+        <titleShort>Stray Sympathizer</titleShort>
+        <baseDesc>[PAWN_nameDef] fed and hid stray dogs long before [PAWN_pronoun] ever hid a person, and never saw much difference between the two kinds of loyalty.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Animals>2</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Aid Station Helper -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Medic</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Medic</identifier>
+        <title>Aid Station Helper</title>
+        <titleShort>Aid Helper</titleShort>
+        <baseDesc>[PAWN_nameDef] helped out at a traveling aid station, learning to set a splint and keep a straight face around wounds that would have put most kids off medicine for good.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>3</Medicine>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Scrap Rigger -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Demolitions</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Demolitions</identifier>
+        <title>Scrap Rigger</title>
+        <titleShort>Scrap Rigger</titleShort>
+        <baseDesc>[PAWN_nameDef] took apart everything that exploded and most things that didn't, building crude charges out of scrap long before anyone taught [PAWN_objective] how to do it properly.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Tunnel Rat -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Cartographer</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Cartographer</identifier>
+        <title>Tunnel Rat</title>
+        <titleShort>Tunnel Rat</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up mapping the drains and service tunnels under the old cities, memorizing routes that didn't show up on any surface map.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Skeptical Kid -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Vetting</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Vetting</identifier>
+        <title>Skeptical Kid</title>
+        <titleShort>Skeptical Kid</titleShort>
+        <baseDesc>[PAWN_nameDef] learned to read a lie off someone's face before [PAWN_pronoun] learned much else worth knowing, a habit that made [PAWN_objective] difficult to fool and worse to grow up around.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Gunsmith's Helper -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Armorer</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Armorer</identifier>
+        <title>Gunsmith's Helper</title>
+        <titleShort>Gunsmith's Helper</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed under a wasteland gunsmith, learning to strip, clean, and rebuild a weapon well before [PAWN_pronoun] was old enough to be trusted firing one.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Chameleon Kid -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_DeepCover</defName>
+        <identifier>FCP_Backstory_Railroad_Child_DeepCover</identifier>
+        <title>Chameleon Kid</title>
+        <titleShort>Chameleon Kid</titleShort>
+        <baseDesc>[PAWN_nameDef] could talk [PAWN_possessive] way into or out of nearly anything by the time [PAWN_pronoun] was old enough to lie convincingly, and rarely needed to use the same story twice.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Purge Survivor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Veteran</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Veteran</identifier>
+        <title>Purge Survivor</title>
+        <titleShort>Purge Survivor</titleShort>
+        <baseDesc>[PAWN_nameDef] survived a raid that nobody else in [PAWN_possessive] cell did, and came out of it with a permanent, well-earned reluctance to trust a plan just because it sounded solid.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Message Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Child_Runner</defName>
+        <identifier>FCP_Backstory_Railroad_Child_Runner</identifier>
+        <title>Message Runner</title>
+        <titleShort>Message Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] carried messages for anyone who'd pay in caps or food, learning routes and hiding spots across half the wasteland before [PAWN_pronoun] hit [PAWN_possessive] teens.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>1</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!--_____ Adulthood _____-->
+
+    <!-- Field Agent -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Agent</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Agent</identifier>
+        <title>Field Agent</title>
+        <titleShort>Field Agent</titleShort>
+        <baseDesc>[PAWN_nameDef] runs operations for the Railroad under a name that isn't [PAWN_possessive] own, moving between safehouses and dead drops with the practiced calm of someone who has been questioned before and given nothing away.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Social>4</Social>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Document Forger -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Forger</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Forger</identifier>
+        <title>Document Forger</title>
+        <titleShort>Forger</titleShort>
+        <baseDesc>[PAWN_nameDef] builds the paper trails that let a synth walk past a checkpoint as somebody who was always human. Every identity [PAWN_pronoun] manufactures has to survive a closer look than the last one.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Social>3</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Signal Operator -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Radio</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Radio</identifier>
+        <title>Signal Operator</title>
+        <titleShort>Signal Operator</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the Railroad's coded broadcasts, packing extraction routes and warnings into transmissions that sound like static to anyone not listening for them.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Safehouse Keeper -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Safehouse</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Safehouse</identifier>
+        <title>Safehouse Keeper</title>
+        <titleShort>Keeper</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps a safehouse running, feeding and hiding whoever the Railroad sends through until it's safe to move them again. [PAWN_pronoun] has learned exactly how long is too long to keep anyone in one place.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Cooking>3</Cooking>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Railroad Recruiter -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Recruiter</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Recruiter</identifier>
+        <title>Railroad Recruiter</title>
+        <titleShort>Recruiter</titleShort>
+        <baseDesc>[PAWN_nameDef] finds the people worth trusting with the Railroad's secrets, and just as often finds the ones who'd sell them out for the right price. [PAWN_pronoun] has been wrong exactly once, and doesn't plan on a second time.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Railroad Smuggler -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Smuggler</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Smuggler</identifier>
+        <title>Railroad Smuggler</title>
+        <titleShort>Smuggler</titleShort>
+        <baseDesc>[PAWN_nameDef] moves weapons, medicine, and people past checkpoints that were never meant to let any of it through. Every route [PAWN_pronoun] uses is already half-compromised by the time anyone else finds out about it.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Shooting>4</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Railroad Lookout -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Lookout</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Lookout</identifier>
+        <title>Railroad Lookout</title>
+        <titleShort>Lookout</titleShort>
+        <baseDesc>[PAWN_nameDef] holds a rifle and a sightline for hours at a stretch, watching for coursers so the rest of the safehouse doesn't have to.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Synth Escort -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Escort</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Escort</identifier>
+        <title>Synth Escort</title>
+        <titleShort>Escort</titleShort>
+        <baseDesc>[PAWN_nameDef] walks liberated synths the last leg of the route personally, past the checkpoints where a nervous escort has gotten people killed before.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Field Medic -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Medic</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Medic</identifier>
+        <title>Field Medic</title>
+        <titleShort>Medic</titleShort>
+        <baseDesc>[PAWN_nameDef] patches up whoever the Railroad sends through, no questions about how they got hurt and none about what they used to be.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>7</Medicine>
+            <Social>2</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Railroad Demolitionist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Demolitions</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Demolitions</identifier>
+        <title>Railroad Demolitionist</title>
+        <titleShort>Demolitionist</titleShort>
+        <baseDesc>[PAWN_nameDef] clears the way when a route gets blocked and covers the retreat when one collapses on purpose. [PAWN_pronoun] doesn't build anything [PAWN_pronoun] isn't prepared to set off early.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Shooting>4</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Route Planner -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Cartographer</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Cartographer</identifier>
+        <title>Route Planner</title>
+        <titleShort>Route Planner</titleShort>
+        <baseDesc>[PAWN_nameDef] plots the paths that move people and cargo without crossing a single checkpoint, redrawing the map every time one of those routes gets burned.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Vetting Specialist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Vetting</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Vetting</identifier>
+        <title>Vetting Specialist</title>
+        <titleShort>Vetting Specialist</titleShort>
+        <baseDesc>[PAWN_nameDef] interviews every new contact the Railroad brings in, hunting for the tell that separates a genuine sympathizer from a courser wearing one's face.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>4</Intellectual>
+            <Shooting>-2</Shooting>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Railroad Armorer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Armorer</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Armorer</identifier>
+        <title>Railroad Armorer</title>
+        <titleShort>Armorer</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the Railroad's scavenged arsenal running, rebuilding weapons that were written off as scrap by everyone except [PAWN_objective].</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Deep Cover Operative -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_DeepCover</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_DeepCover</identifier>
+        <title>Deep Cover Operative</title>
+        <titleShort>Deep Cover</titleShort>
+        <baseDesc>[PAWN_nameDef] has worn more names than [PAWN_pronoun] can list, embedding inside settlements and caravans for months at a time to watch for Institute activity nobody else can get close enough to see.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>7</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Old Guard Veteran -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Veteran</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Veteran</identifier>
+        <title>Old Guard Veteran</title>
+        <titleShort>Veteran</titleShort>
+        <baseDesc>[PAWN_nameDef] has outlived most of the agents [PAWN_pronoun] trained with, and treats every new recruit as someone [PAWN_pronoun] hasn't finished worrying about yet.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Route Runner -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Railroad_Adult_Runner</defName>
+        <identifier>FCP_Backstory_Railroad_Adult_Runner</identifier>
+        <title>Route Runner</title>
+        <titleShort>Runner</titleShort>
+        <baseDesc>[PAWN_nameDef] carries cargo and messages between safehouses that don't trust radios, memorizing routes and burning them the moment they stop being safe.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Railroad</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Shooting>4</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+</Defs>

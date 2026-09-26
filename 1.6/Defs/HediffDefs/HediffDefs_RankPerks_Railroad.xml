@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Railroad Rank Perks __________-->
+
+    <HediffDef Name="FCP_Hediff_Railroad_RankBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+    </HediffDef>
+
+    <!-- The Underground Line -->
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_Runner</defName>
+        <label>runner's training</label>
+        <description>Years of running the line on foot have made this pawn quick on their feet.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.05</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_Conductor</defName>
+        <label>conductor's training</label>
+        <description>Escorting people the length of the line has made this pawn quicker still.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.08</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_SeniorConductor</defName>
+        <label>senior conductor's training</label>
+        <description>Running the whole line leaves no room for a slow step.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.12</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Field Operations -->
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_Operative</defName>
+        <label>operative training</label>
+        <description>Standing watch and running interference has sharpened this pawn's aim.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_SeniorOperative</defName>
+        <label>senior operative training</label>
+        <description>Running solo extractions has sharpened this pawn's aim further.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_HeavyOperative</defName>
+        <label>heavy operative training</label>
+        <description>Being the last line of defense when a safehouse falls has sharpened this pawn's aim considerably.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Station Chief -->
+
+    <HediffDef ParentName="FCP_Hediff_Railroad_RankBase">
+        <defName>FCP_Hediff_Railroad_Rank_StationChief</defName>
+        <label>station chief's training</label>
+        <description>Running a whole stretch of the line demands fluency in both tradecraft and a firefight.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.1</MoveSpeed>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>FCP_Hediff_Railroad_StationChief_Presence</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>station chief's presence</label>
+        <description>The station chief is nearby. Whoever's on watch moves a little steadier for it.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>310</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.2</MoveSpeed>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>FCP_Hediff_Railroad_StationChief_Rally</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>gone dark</label>
+        <description>The station chief has called for everyone to move fast and quiet. Steady hands, quick feet.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>1</MoveSpeed>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

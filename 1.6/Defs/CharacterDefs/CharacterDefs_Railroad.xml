@@ -184,6 +184,34 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
+    <!-- Doctor Amari -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Amari</defName>
+        <pawnKind>FCP_Pawnkind_Railroad_Agent</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Doctor</firstName>
+                <lastName>Amari</lastName>
+                <gender>Female</gender>
+                <age>45</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Shaved_Female</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(89, 63, 49)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Railroad_Conductor</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
     <!--__________ P.A.M. __________-->
     <!-- Personality construct housed on an Assaultron chassis, matching the Yes Man / Victor
          robot-persona precedent set in FCP-Robotics: no faction, no story/rank definitions,

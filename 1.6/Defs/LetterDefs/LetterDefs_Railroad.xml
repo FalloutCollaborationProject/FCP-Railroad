@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Letters __________-->
+
+    <LetterDef ParentName="CustomChoiceLetterBase">
+        <defName>FCP_Letter_RailroadLiberation</defName>
+        <letterClass>FCP.Railroad.ChoiceLetter_RailroadLiberation</letterClass>
+    </LetterDef>
+
+</Defs>

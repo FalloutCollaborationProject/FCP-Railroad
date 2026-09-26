@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>FCP_Thought_RailroadSympathizer_DislikesInstitute</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>FCP.Core.Thoughts.ThoughtWorker_RailroadSympathizer_DislikesInstitute</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Institute loyalist</label>
+                <description>{0} still thinks a mind that can think and fear and choose is just property with a warranty. I can't unhear that.</description>
+                <baseOpinionOffset>-10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>FCP_Thought_RailroadSympathizer_DislikesBoS</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>FCP.Core.Thoughts.ThoughtWorker_RailroadSympathizer_DislikesBoS</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Brotherhood zealot</label>
+                <description>{0} would put a bullet in a synth just for existing. Doesn't matter to them what's inside, only what it's made of.</description>
+                <baseOpinionOffset>-10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FCP.Ranks.RankTrackDef>
+        <defName>FCP_RankTrack_Railroad</defName>
+        <label>Line Standing</label>
+        <iconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</iconPath>
+        <rootTier>FCP_Rank_Railroad_Recruit</rootTier>
+        <owningFaction>FCP_Faction_Railroad</owningFaction>
+        <allowsGearMaintenance>true</allowsGearMaintenance>
+        <collectiveNoun>the Railroad</collectiveNoun>
+        <drillLabel>Run Drill...</drillLabel>
+        <drillDesc>Drill with any colonist. Both stop, stand apart, and run through a route or a contact drill. Both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Tradecraft Session...</studyLabel>
+        <studyDesc>Go over tradecraft with another colonist on the line. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Cover Check...</inspectLabel>
+        <inspectDesc>Review a lower-ranked agent's gear and cover story for holes. A clean story earns trust, a shaky one earns a warning.</inspectDesc>
+        <punishLabel>Assign Dead Drops...</punishLabel>
+        <punishDesc>Assign a lower-ranked agent a stretch of tedious dead-drop runs for a lapse in tradecraft, souring their mood. Once per day per colonist.</punishDesc>
+        <rallyLabel>Go Dark</rallyLabel>
+        <rallyDesc>Signal every combat-ranked agent among {0} on this map to move fast and quiet. Once every few days.</rallyDesc>
+        <fallInLabel>Rally Point</fallInLabel>
+        <fallInDesc>Order {0} to a rally point behind you, up to four deep, interrupting whatever they're doing. They hold until stood down.</fallInDesc>
+        <dismissLabel>Scatter</dismissLabel>
+        <dismissDesc>Scatter {0} from the rally point, letting them return to their duties.</dismissDesc>
+    </FCP.Ranks.RankTrackDef>
+
+</Defs>

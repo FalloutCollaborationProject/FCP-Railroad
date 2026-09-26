@@ -10,7 +10,7 @@
     <ThingDef ParentName="FCP_Armor_Machineable_Base">
         <defName>FCP_Apparel_Railroad_Armored_Coat</defName>
         <label>Railroad armored coat</label>
-        <description>A long coat favored by Railroad agents, its lining reinforced with scavenged steel plates and hardened leather. Built to take a hit from an Institute Courser without looking like armor at a distance - the Railroad prefers its people blend in until the moment they don't.</description>
+        <description>A long coat favored by Railroad agents, its lining reinforced with scavenged steel plates and hardened leather. Built to take a hit from an Institute Courser without looking like armor at a distance, because the Railroad prefers its people blend in until the moment they don't.</description>
         <recipeMaker>
             <researchPrerequisite>FCP_Research_Railroad_Outfitters</researchPrerequisite>
             <skillRequirements>

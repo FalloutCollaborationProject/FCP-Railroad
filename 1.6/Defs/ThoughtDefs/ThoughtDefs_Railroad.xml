@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Thoughts __________-->
+
+    <!-- Liberated -->
+
+    <ThoughtDef>
+        <defName>FCP_Thought_RailroadLiberated</defName>
+        <durationDays>15</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>no longer hiding</label>
+                <description>The Railroad knows what I am, and it doesn't change anything between us. I don't have to carry that alone anymore.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

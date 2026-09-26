@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Railroad Enlistment __________-->
+
+	<FCP_Railroad_Enlist_Letter_Title>A Careful Approach</FCP_Railroad_Enlist_Letter_Title>
+	<FCP_Railroad_Enlist_Letter_Label>Railroad Contact</FCP_Railroad_Enlist_Letter_Label>
+	<FCP_Railroad_Enlist_Button_Label>Enlist with the Railroad</FCP_Railroad_Enlist_Button_Label>
+	<FCP_Railroad_Enlist_Button_Desc>Join the Railroad's cause. The pay is modest and the trust is earned slowly, but the work matters.</FCP_Railroad_Enlist_Button_Desc>
+	<FCP_Railroad_Enlist_Requrements_Not_Satisfied>The Railroad doesn't recruit anyone it hasn't had time to trust. Build more standing with them first.</FCP_Railroad_Enlist_Requrements_Not_Satisfied>
+	<FCP_Railroad_Enlisted_To_Hostile_Faction>{0} won't enlist with a faction your colony is at war with.</FCP_Railroad_Enlisted_To_Hostile_Faction>
+	<FCP_Railroad_Enlisted_With_Key>Enlisted with the Railroad</FCP_Railroad_Enlisted_With_Key>
+
+	<!-- Missions -->
+
+	<FCP_Railroad_Missions_Label>Line Taskings</FCP_Railroad_Missions_Label>
+	<FCP_Railroad_Missions_Desc>Accept taskings from the Railroad and collect payment once they're finished.</FCP_Railroad_Missions_Desc>
+	<FCP_Railroad_Menu_Missions_Desc>Available taskings from the line.</FCP_Railroad_Menu_Missions_Desc>
+	<FCP_Railroad_Menu_Missions_Select_Quest>Select a Tasking</FCP_Railroad_Menu_Missions_Select_Quest>
+	<FCP_Railroad_Menu_Missions_Start_Quest>Accept</FCP_Railroad_Menu_Missions_Start_Quest>
+	<FCP_Railroad_Menu_Missions_Collect_Bounty>Collect Payment</FCP_Railroad_Menu_Missions_Collect_Bounty>
+
+	<!-- Salary -->
+
+	<FCP_Railroad_Salary_Label>Standing Pay</FCP_Railroad_Salary_Label>
+	<FCP_Railroad_Salary_Desc>A modest cut of whatever the Railroad can spare, paid out of a treasury that never has quite enough in it.</FCP_Railroad_Salary_Desc>
+
+	<!-- Storage -->
+
+	<FCP_Railroad_Storage_Label>Railroad Storage</FCP_Railroad_Storage_Label>
+	<FCP_Railroad_Storage_Desc>Store and withdraw goods from the Railroad's own caches.</FCP_Railroad_Storage_Desc>
+
+	<!-- Work Options -->
+
+	<FCP_Railroad_LineRunning_Label>Line Running</FCP_Railroad_LineRunning_Label>
+	<FCP_Railroad_LineRunning_Desc>Learn the routes and the tradecraft that keep the line moving. Builds Social and Intellectual skill over time.</FCP_Railroad_LineRunning_Desc>
+	<FCP_Railroad_FieldOps_Label>Field Operations Training</FCP_Railroad_FieldOps_Label>
+	<FCP_Railroad_FieldOps_Desc>Drill with the Railroad's field operatives. Builds Shooting and Melee skill over time.</FCP_Railroad_FieldOps_Desc>
+	<FCP_Railroad_Medic_Label>Safehouse Medic Duty</FCP_Railroad_Medic_Label>
+	<FCP_Railroad_Medic_Desc>Tend to caravan members with whatever medicine the safehouse has on hand.</FCP_Railroad_Medic_Desc>
+
+	<!-- Resign -->
+
+	<FCP_Railroad_Resign_Menu_Text>Resigning ends your standing with the Railroad immediately. Are you sure?</FCP_Railroad_Resign_Menu_Text>
+	<FCP_Railroad_Resign_Letter_Title>Cut Loose</FCP_Railroad_Resign_Letter_Title>
+	<FCP_Railroad_Resign_Letter_Label>Railroad Contact</FCP_Railroad_Resign_Letter_Label>
+	<FCP_Railroad_Resign_Button_Label>Resign</FCP_Railroad_Resign_Button_Label>
+	<FCP_Railroad_Resign_Button_Desc>End your standing with the Railroad. They'll assume you have your reasons.</FCP_Railroad_Resign_Button_Desc>
+
+	<!-- Kicked Out -->
+
+	<FCP_Railroad_Kick_Out_Letter_Title>Cut Loose</FCP_Railroad_Kick_Out_Letter_Title>
+	<FCP_Railroad_Kick_Out_Label_Title>Railroad Contact</FCP_Railroad_Kick_Out_Label_Title>
+
+	<!-- Reinforcements -->
+
+	<FCP_Railroad_Reinforcements_Button_Label>Call for Backup</FCP_Railroad_Reinforcements_Button_Label>
+	<FCP_Railroad_Reinforcements_Button_Desc>Call in Railroad operatives to assist against a nearby threat, at a cost to your standing.</FCP_Railroad_Reinforcements_Button_Desc>
+
+</LanguageData>

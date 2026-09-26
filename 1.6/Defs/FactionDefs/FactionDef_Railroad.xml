@@ -29,8 +29,39 @@
         </fixedLeaderKinds>
         <factionIconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</factionIconPath>
         <techLevel>Industrial</techLevel>
+        <baseTraderKinds>
+            <li>FCP_TraderKind_Railroad_TinkerTom</li>
+        </baseTraderKinds>
         <naturalEnemy>false</naturalEnemy>
         <permanentEnemy>false</permanentEnemy>
+        <modExtensions Inherit="False">
+            <!-- Make them hostile to the Institute -->
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li MayRequire="Rick.FCP.Institute">FCP_Faction_Institute</li>
+                    <li MayRequire="Rick.FCP.BOS">FCP_Faction_BoS</li>
+                </hostileFactionDefs>
+            </li>
+            <!-- Ally with the Minutemen -->
+            <li Class="FCP.Factions.FactionExtension_PermanentlyAlliedTo">
+                <alliedFactionDefs>
+                    <li MayRequire="Rick.FCP.Minutemen">FCP_Faction_Commonwealth_Minutemen</li>
+                </alliedFactionDefs>
+            </li>
+            <!-- Enlistment -->
+            <li Class="FCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>FCP_Enlistment_Railroad</li>
+                </enlistOptionsDefs>
+            </li>
+        </modExtensions>
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>Abolitionism</ideoName>
+        <ideoDescription>The Railroad's official worldview: a mind that thinks and chooses for itself is a person, and freeing one is worth the risk of everything else.</ideoDescription>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Railroad_Abolitionism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Railroad_Heavies</li>
+        </forcedMemes>
         <pawnGroupMakers>
             <li>
                 <kindDef>Combat</kindDef>

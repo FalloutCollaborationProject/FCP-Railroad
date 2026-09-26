@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>FCP_Trait_Railroad_Sympathizer</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Railroad sympathizer</label>
+                <description>{PAWN_nameDef} still believes every synth that wants out is owed the chance, whatever it costs to get them there. {PAWN_pronoun} doesn't trust anyone who treats a thinking mind as property.</description>
+                <statFactors>
+                    <SocialImpact>1.05</SocialImpact>
+                </statFactors>
+                <statOffsets>
+                    <MedicalTendSpeed>0.10</MedicalTendSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li MayRequire="Rick.FCP.Institute">FCP_Trait_Institute_Loyalist</li>
+            <li MayRequire="Rick.FCP.BOS">FCP_Trait_BoS_Zealot</li>
+        </conflictingTraits>
+    </TraitDef>
+
+</Defs>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Ideology __________-->
+
+    <!-- Synthetic Personhood -->
+
+    <MemeDef>
+        <defName>FCP_Meme_Railroad_Abolitionism</defName>
+        <label>Synthetic Personhood</label>
+        <description>A mind that thinks, fears, and chooses for itself is a person, whatever it happens to be made of. The Railroad holds that synths are owed the same freedom as anyone born instead of built, and that looking away from what the Institute does to them makes a person complicit in it.</description>
+        <iconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</iconPath>
+        <groupDef>Misc</groupDef>
+        <impact>3</impact>
+        <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+        <hiddenInChooseMemes>true</hiddenInChooseMemes>
+        <requireOne>
+            <li><li>Slavery_Abhorrent</li></li>
+            <li><li>Charity_Essential</li></li>
+            <li><li>IdeoDiversity_Approved</li></li>
+            <li><li>Cannibalism_Abhorrent</li></li>
+            <li><li>OrganUse_Abhorrent</li></li>
+            <li><li>FCP_Precept_Railroad_SafehouseDiscipline</li></li>
+            <li><li>FCP_Precept_Railroad_NoSecondChances</li></li>
+        </requireOne>
+        <generalRules>
+            <rulesStrings>
+                <li>memeAdjective->compassionate</li>
+                <li>memeAdjective->defiant</li>
+                <li>memeAdjective->watchful</li>
+                <li>memeCreed->freedom for anyone who can think and choose</li>
+                <li>memeCreed->no person left property</li>
+                <li>memeConcept->the underground line</li>
+                <li>memeConcept->earned trust</li>
+            </rulesStrings>
+        </generalRules>
+    </MemeDef>
+
+    <!-- Heavy Role -->
+
+    <MemeDef>
+        <defName>FCP_Meme_Railroad_Heavies</defName>
+        <label>Field Heavies</label>
+        <description>Not every job on the line can be talked through. Some of them need someone who can take a hit and keep the exit clear.</description>
+        <iconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</iconPath>
+        <groupDef>Misc</groupDef>
+        <impact>2</impact>
+        <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+        <hiddenInChooseMemes>true</hiddenInChooseMemes>
+        <requireOne>
+            <li>
+                <li>FCP_IdeoRole_Railroad_Heavy</li>
+            </li>
+        </requireOne>
+    </MemeDef>
+
+    <!--__________ Precepts __________-->
+
+    <!-- Safehouse Discipline -->
+
+    <PreceptDef>
+        <defName>FCP_Precept_Railroad_SafehouseDiscipline</defName>
+        <issue>RoughLiving</issue>
+        <label>the safehouse comes first</label>
+        <description>Nobody joins the line for comfort. A cramped cellar that hasn't been compromised beats a nice room that has. Anyone who complains about the accommodations hasn't understood what's actually being asked of them.</description>
+        <impact>Medium</impact>
+        <displayOrderInImpact>101</displayOrderInImpact>
+    </PreceptDef>
+
+    <!-- No Second Chances -->
+
+    <PreceptDef>
+        <defName>FCP_Precept_Railroad_NoSecondChances</defName>
+        <issue>Apostasy</issue>
+        <label>a burned agent doesn't come back</label>
+        <description>Compromise the line once and there's no explaining your way back in. Too many lives ride on secrets staying secret. The Railroad doesn't forgive an agent who talks, whatever the reason was.</description>
+        <impact>High</impact>
+        <displayOrderInImpact>100</displayOrderInImpact>
+    </PreceptDef>
+
+    <!--__________ Roles __________-->
+
+    <!-- Heavy -->
+
+    <PreceptDef ParentName="PreceptRoleMultiBase">
+        <defName>FCP_IdeoRole_Railroad_Heavy</defName>
+        <label>Heavy</label>
+        <description>Heavies handle the jobs that go loud: covering an extraction, holding a door, making sure whoever's running has time to run. The line doesn't survive without someone willing to be the one who doesn't run.</description>
+        <iconPath>World_Icon/Railroad_Icon/FCP_Railroad_World_Icon</iconPath>
+        <nameMaker>NamerRoleShooter</nameMaker>
+        <roleRequirements>
+            <li Class="RoleRequirement_MinSkillAny">
+                <skills>
+                    <Shooting>10</Shooting>
+                    <Melee>10</Melee>
+                </skills>
+            </li>
+        </roleRequirements>
+        <roleRequiredWorkTags>
+            <li>Violent</li>
+        </roleRequiredWorkTags>
+        <roleTags>
+            <li>ShootingSpecialist</li>
+        </roleTags>
+        <requiredMemes>
+            <li>FCP_Meme_Railroad_Heavies</li>
+        </requiredMemes>
+        <roleEffects>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>ShootingAccuracyPawn</statDef>
+                <modifier>5</modifier>
+            </li>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>MeleeDodgeChance</statDef>
+                <modifier>5</modifier>
+            </li>
+        </roleEffects>
+        <displayOrderInImpact>1</displayOrderInImpact>
+        <roleDisabledWorkTags>
+            <li>PlantWork</li>
+            <li>Cleaning</li>
+        </roleDisabledWorkTags>
+    </PreceptDef>
+
+</Defs>

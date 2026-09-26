@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Incidents __________-->
+
+    <!-- Liberation Contact -->
+
+    <IncidentDef>
+        <defName>FCP_Incident_RailroadLiberation</defName>
+        <label>Railroad liberation contact</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>FCP.Railroad.IncidentWorker_RailroadLiberation</workerClass>
+        <baseChance>2</baseChance>
+        <minRefireDays>15</minRefireDays>
+    </IncidentDef>
+
+</Defs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Railroad Rank Expeditions __________-->
+
+    <!-- Loot -->
+
+    <ThingSetMakerDef>
+        <defName>FCP_RailroadExpeditionLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>MedicineIndustrial</li>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <!-- Run -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Railroad_Run</defName>
+        <label>supply run</label>
+        <description>A short trip moving cargo, or a nervous passenger, down the line to the next safehouse.</description>
+        <durationDays>3~5</durationDays>
+        <xpReward>
+            <Social>200</Social>
+        </xpReward>
+        <lootMaker>FCP_RailroadExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>50~150</lootMarketValueRange>
+        <siteRevealChance>0.15</siteRevealChance>
+        <failureChance>0.12</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Railroad_Run_1</li>
+            <li>FCP_Rank_Expedition_Railroad_Run_2</li>
+            <li>FCP_Rank_Expedition_Railroad_Run_3</li>
+            <li>FCP_Rank_Expedition_Railroad_Run_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Extraction -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Railroad_Extraction</defName>
+        <label>extraction</label>
+        <description>A tasked operation pulling a synth or a compromised agent out from under the Institute's nose.</description>
+        <durationDays>6~8</durationDays>
+        <xpReward>
+            <Social>400</Social>
+            <Shooting>200</Shooting>
+        </xpReward>
+        <lootMaker>FCP_RailroadExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>150~350</lootMarketValueRange>
+        <siteRevealChance>0.25</siteRevealChance>
+        <failureChance>0.1</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Railroad_Extraction_1</li>
+            <li>FCP_Rank_Expedition_Railroad_Extraction_2</li>
+            <li>FCP_Rank_Expedition_Railroad_Extraction_3</li>
+            <li>FCP_Rank_Expedition_Railroad_Extraction_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Deep Line -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Railroad_Deepline</defName>
+        <label>deep line operation</label>
+        <description>A long-range operation run on the Railroad's own authority, the kind that decides whether a whole cell survives the year.</description>
+        <durationDays>10~14</durationDays>
+        <xpReward>
+            <Social>800</Social>
+            <Shooting>400</Shooting>
+            <Intellectual>200</Intellectual>
+        </xpReward>
+        <lootMaker>FCP_RailroadExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>500~900</lootMarketValueRange>
+        <siteRevealChance>0.5</siteRevealChance>
+        <failureChance>0.05</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Railroad_Deepline_1</li>
+            <li>FCP_Rank_Expedition_Railroad_Deepline_2</li>
+            <li>FCP_Rank_Expedition_Railroad_Deepline_3</li>
+            <li>FCP_Rank_Expedition_Railroad_Deepline_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+</Defs>

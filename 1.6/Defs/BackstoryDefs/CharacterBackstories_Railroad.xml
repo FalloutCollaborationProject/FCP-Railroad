@@ -122,7 +122,7 @@
         <defName>FCP_Character_Backstory_Glory_Child</defName>
         <title>Institute Design</title>
         <titleShort>Design</titleShort>
-        <baseDesc>[PAWN_nameDef] was built, not born - synthesized in an Institute vat and given a combat directive instead of a childhood. What happened after [PAWN_pronoun] stopped following that directive is a subject [PAWN_pronoun] doesn't discuss.</baseDesc>
+        <baseDesc>[PAWN_nameDef] was built, not born, synthesized in an Institute vat and given a combat directive instead of a childhood. What happened after [PAWN_pronoun] stopped following that directive is a subject [PAWN_pronoun] doesn't discuss.</baseDesc>
         <bodyTypeMale>Female</bodyTypeMale>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Childhood</slot>
@@ -177,7 +177,7 @@
         <defName>FCP_Character_Backstory_DrummerBoy_Adult</defName>
         <title>Railroad Courier</title>
         <titleShort>Courier</titleShort>
-        <baseDesc>[PAWN_nameDef] carries Desdemona's mission briefs between safehouses, memorizing what needs memorizing and forgetting the rest on purpose. Too young to have earned anyone's trust the slow way, [PAWN_pronoun] earned it the fast way instead - by never once getting caught.</baseDesc>
+        <baseDesc>[PAWN_nameDef] carries Desdemona's mission briefs between safehouses, memorizing what needs memorizing and forgetting the rest on purpose. Too young to have earned anyone's trust the slow way, [PAWN_pronoun] earned it the fast way instead, by never once getting caught.</baseDesc>
         <bodyTypeMale>Thin</bodyTypeMale>
         <bodyTypeFemale>Thin</bodyTypeFemale>
         <slot>Adulthood</slot>

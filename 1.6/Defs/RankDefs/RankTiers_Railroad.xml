@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Railroad Ranks __________-->
+
+    <!--_____ Trunk _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_Recruit</defName>
+        <label>recruit</label>
+        <description>Vetted and trusted with a name that isn't their own, but not yet trusted with much else.</description>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_Runner</li>
+            <li>FCP_Rank_Railroad_Operative</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of the Underground Line _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_Runner</defName>
+        <label>runner</label>
+        <description>Carries messages and cargo between safehouses, learning the routes well enough to run them without thinking.</description>
+        <pathName>The Underground Line</pathName>
+        <minDaysInRank>5</minDaysInRank>
+        <skillRequirements>
+            <Social>6</Social>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Railroad_Rank_Runner</grantHediff>
+        <trainingXpPerHour>
+            <Social>400</Social>
+            <Shooting>100</Shooting>
+        </trainingXpPerHour>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_Conductor</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_Conductor</defName>
+        <label>conductor</label>
+        <description>Escorts liberated synths the length of the line personally, past the checkpoints where a nervous escort gets people killed. Some conductors, like Doctor Amari, patch together whatever's left of them once they're safe instead.</description>
+        <minDaysInRank>10</minDaysInRank>
+        <skillRequirements>
+            <Social>11</Social>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <minSquiresTrained>1</minSquiresTrained>
+        <grantHediff>FCP_Hediff_Railroad_Rank_Conductor</grantHediff>
+        <trainingXpPerHour>
+            <Social>600</Social>
+            <Intellectual>200</Intellectual>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Railroad_Run</expedition>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_SeniorConductor</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_SeniorConductor</defName>
+        <label>senior conductor</label>
+        <description>Runs the line itself, deciding which routes are still safe and which have to be burned, the way Desdemona and Carrington do.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Social>16</Social>
+            <Intellectual>8</Intellectual>
+        </skillRequirements>
+        <minSquiresTrained>2</minSquiresTrained>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Railroad_Rank_SeniorConductor</grantHediff>
+        <trainingXpPerHour>
+            <Social>800</Social>
+            <Intellectual>300</Intellectual>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Railroad_Extraction</expedition>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_StationChief</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of Field Operations _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_Operative</defName>
+        <label>operative</label>
+        <description>Handles the Railroad's rougher work: standing watch, running interference, and making sure an extraction stays quiet.</description>
+        <pathName>Field Operations</pathName>
+        <minDaysInRank>5</minDaysInRank>
+        <skillRequirements>
+            <Shooting>6</Shooting>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Railroad_Rank_Operative</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>500</Shooting>
+            <Melee>100</Melee>
+        </trainingXpPerHour>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_SeniorOperative</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_SeniorOperative</defName>
+        <label>senior operative</label>
+        <description>Trusted to run an extraction solo when a firefight looks likely, the way Glory does.</description>
+        <minDaysInRank>10</minDaysInRank>
+        <skillRequirements>
+            <Shooting>11</Shooting>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Railroad_Rank_SeniorOperative</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>700</Shooting>
+            <Melee>150</Melee>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Railroad_Run</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_HeavyOperative</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_HeavyOperative</defName>
+        <label>heavy operative</label>
+        <description>The Railroad's answer to any operation that stops being subtle, and the last line of defense when a safehouse gets found.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Shooting>16</Shooting>
+            <Melee>8</Melee>
+        </skillRequirements>
+        <minSquiresTrained>2</minSquiresTrained>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Railroad_Rank_HeavyOperative</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>900</Shooting>
+            <Melee>200</Melee>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Railroad_Extraction</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Railroad_StationChief</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Summit _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Railroad_StationChief</defName>
+        <label>station chief</label>
+        <description>Runs an entire stretch of the line, answering to no one but their own conscience and the people they've sworn to protect.</description>
+        <minDaysInRank>30</minDaysInRank>
+        <skillRequirements>
+            <Social>12</Social>
+        </skillRequirements>
+        <minMissionsCompleted>3</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Railroad_Rank_StationChief</grantHediff>
+        <trainingXpPerHour>
+            <Social>500</Social>
+            <Shooting>500</Shooting>
+            <Intellectual>200</Intellectual>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Railroad_Deepline</expedition>
+        <isCommanderTier>true</isCommanderTier>
+        <auraRadius>16</auraRadius>
+        <auraHediff>FCP_Hediff_Railroad_StationChief_Presence</auraHediff>
+        <rallyHediff>FCP_Hediff_Railroad_StationChief_Rally</rallyHediff>
+        <rallyCooldownDays>2</rallyCooldownDays>
+    </FCP.Ranks.RankTierDef>
+
+</Defs>

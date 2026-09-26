@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Railroad Trader Kinds __________-->
+
+    <!-- Tinker Tom -->
+
+    <TraderKindDef>
+        <defName>FCP_TraderKind_Railroad_TinkerTom</defName>
+        <label>Tinker Tom</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>300~700</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Item_Stealthboy_3001A</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Item_Stealthboy_3001B</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>FCP_Trade_Tag_Railroad_Apparel</tradeTag>
+                <thingDefCountRange>1~1</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>

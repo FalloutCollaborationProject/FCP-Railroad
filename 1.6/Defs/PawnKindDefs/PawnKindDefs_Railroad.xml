@@ -24,6 +24,19 @@
         <weaponTags>
             <li>SimpleGun</li>
         </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Railroad_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Railroad</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <FCP_Trait_Railroad_Sympathizer>0</FCP_Trait_Railroad_Sympathizer>
+        </forcedTraits>
     </PawnKindDef>
 
     <!-- Railroad Agent (generic member) -->

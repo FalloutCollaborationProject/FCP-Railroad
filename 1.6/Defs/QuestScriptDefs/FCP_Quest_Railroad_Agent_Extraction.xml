@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Railroad_Agent_Extraction</defName>
+        <rootSelectionWeight>1.0</rootSelectionWeight>
+        <rootMinPoints>50</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Extracting [prisoner_nameDef]</li>
+                <li>questName->[prisoner_nameDef]'s Extraction</li>
+                <li>questName->Getting [prisoner_nameDef] Out</li>
+                <li>questName->A Burned Contact</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[prisoner_nameDef] missed a check-in three days running. The line traced [prisoner_nameDef] to a hostile camp before the trail went cold. [asker_nameFull] wants an extraction before whoever's holding [prisoner_nameDef] starts asking the wrong questions.\n\nRequirements: reach the site and free [prisoner_nameDef] from captivity. Clearing the guards isn't enough on its own; you need to release [prisoner_nameDef] from the cell. Wait too long and there may be nothing left worth extracting.</li>
+                <li>questDescription->[asker_nameFull]: "[prisoner_nameDef] went dark on a run and turned up as a prisoner. If [prisoner_nameDef] talks, it doesn't just cost us one safehouse. Get [prisoner_nameDef] out before that happens."\n\nRequirements: reach the site and free [prisoner_nameDef] from captivity. Clearing the guards isn't enough on its own; you need to release [prisoner_nameDef] from the cell. Wait too long and there may be nothing left worth extracting.</li>
+                <li>questDescription->A run went bad and [prisoner_nameDef] didn't make it back. [asker_nameFull] has confirmed the camp holding [prisoner_nameDef] and is asking outside help to finish what the line can't risk doing itself.\n\nRequirements: reach the site and free [prisoner_nameDef] from captivity. Clearing the guards isn't enough on its own; you need to release [prisoner_nameDef] from the cell. Wait too long and there may be nothing left worth extracting.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionDef>FCP_Faction_Railroad</factionDef>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>enemyFaction</storeAs>
+                    <factionDefs>
+                        <li>Pirate</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>prisonerFaction</storeAs>
+                    <factionDefs>
+                        <li>FCP_Faction_Railroad</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetPawnKind">
+                    <storeAs>prisonerPawnKind</storeAs>
+                    <pawnKindDef>FCP_Pawnkind_Railroad_Agent</pawnKindDef>
+                </li>
+                <li Class="QuestNode_GetRandomInRangeFloat">
+                    <storeAs>chanceToJoinVal</storeAs>
+                    <range>0~1</range>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>chanceToJoin</name>
+                    <value>0.25</value>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_PawnRescue</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                    <defsToExcludeFromHyperlinks>Human</defsToExcludeFromHyperlinks>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>prisoner.RescuedFromPrison</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>true</allowRoyalFavor>
+                                    <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Extraction complete</customLetterLabel>
+                                <customLetterText>[prisoner_nameDef] is out and headed back down the line. Payment from [asker_faction_name] comes through, quiet as always.</customLetterText>
+                                <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
+                                    <letterDef>ChoosePawn</letterDef>
+                                    <label TKey="LetterLabelFavorReceiver">[asker_faction_royalFavorLabel]</label>
+                                    <text TKey="LetterTextFavorReceiver">These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service.</text>
+                                    <useColonistsOnMap>$site</useColonistsOnMap>
+                                    <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+                                </nodeIfChosenPawnSignalUsed>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>prisoner.RescuedFromPrison</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

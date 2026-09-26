@@ -26,6 +26,8 @@
         <li>Rick.FCP.Core.Tools</li>
         <li>Rick.FCP.PowerArmor</li>
         <li>Rick.FCP.Robotics</li>
+        <li>Rick.FCP.Institute</li>
+        <li>Rick.FCP.Minutemen</li>
     </loadAfter>
 
 </ModMetaData>
