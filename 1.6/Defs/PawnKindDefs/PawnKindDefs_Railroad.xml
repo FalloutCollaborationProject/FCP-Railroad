@@ -37,6 +37,8 @@
         <forcedTraits>
             <FCP_Trait_Railroad_Sympathizer>0</FCP_Trait_Railroad_Sympathizer>
         </forcedTraits>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Railroad Agent (generic member) -->

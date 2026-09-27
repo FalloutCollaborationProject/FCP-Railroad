@@ -30,6 +30,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>6~8</initialWillRange>
+        <initialResistanceRange>35~45</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Doctor Carrington -->
@@ -55,6 +57,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>30~40</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Tinker Tom -->
@@ -81,6 +85,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Glory -->
@@ -112,6 +118,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>6~8</initialWillRange>
+        <initialResistanceRange>35~45</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Drummer Boy -->
@@ -137,6 +145,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>10~18</initialResistanceRange>
     </PawnKindDef>
 
     <!-- High Rise -->
@@ -165,6 +175,8 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
     </PawnKindDef>
 
 </Defs>

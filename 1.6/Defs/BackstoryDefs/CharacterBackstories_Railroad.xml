@@ -76,7 +76,7 @@
             <Social>3</Social>
         </skillGains>
         <forcedTraits>
-            <Neurotic>0</Neurotic>
+            <Neurotic>1</Neurotic>
         </forcedTraits>
     </BackstoryDef>
 
