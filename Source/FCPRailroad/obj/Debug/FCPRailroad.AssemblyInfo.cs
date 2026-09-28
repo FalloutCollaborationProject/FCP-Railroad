@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright ©Fallout Collaboration Project 2024")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86534e8fd6091010c4aa844b2f11ae296892b573")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f097173820eb7b218f3681354302f80300a757f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FalloutCollaborationProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCP_Railroad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
