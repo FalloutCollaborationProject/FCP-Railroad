@@ -76,6 +76,7 @@
         <ideoName>Abolitionism</ideoName>
         <ideoDescription>The Railroad's official worldview: a mind that thinks and chooses for itself is a person, and freeing one is worth the risk of everything else.</ideoDescription>
         <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Railroad_Abolitionism</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Railroad_Heavies</li>
         </forcedMemes>
