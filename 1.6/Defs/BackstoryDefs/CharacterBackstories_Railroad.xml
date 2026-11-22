@@ -230,4 +230,141 @@
         </forcedTraits>
     </BackstoryDef>
 
+    <!-- Escaped Synths -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_EscapedSynth_Child</defName>
+        <title>Institute-Built</title>
+        <titleShort>Built</titleShort>
+        <baseDesc>[PAWN_nameDef] came out of an Institute vat fully grown. Whatever childhood [PAWN_pronoun] remembers was written by someone else.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_EscapedSynth_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Ricky Dalton -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_RickyDalton_Adult</defName>
+        <title>Railroad Field Agent</title>
+        <titleShort>Agent</titleShort>
+        <baseDesc>[PAWN_nameDef] has a story for every scar, and most of them are lies. Under all the bragging is a solid field agent who has moved more packages than anyone gives [PAWN_objective] credit for.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_RickyDalton_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Social>4</Social>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Old Man Stockton -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Stockton_Adult</defName>
+        <title>Bunker Hill Trader</title>
+        <titleShort>Trader</titleShort>
+        <baseDesc>[PAWN_nameDef] runs caravans in and out of Bunker Hill, and some of the crates hold people. [PAWN_pronoun] has been the Railroad's quiet waypoint there for years and is getting too old for the risk.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Stockton_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Victoria Watts -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_VictoriaWatts_Adult</defName>
+        <title>Capital Wasteland Agent</title>
+        <titleShort>Agent</titleShort>
+        <baseDesc>[PAWN_nameDef] worked the Railroad's routes through the Capital Wasteland, tracking a runaway synth while Institute hunters chased the same leads. Patient and polite, [PAWN_pronoun] is very hard to lie to.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_VictoriaWatts_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>4</Shooting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- H2-22 -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_H2_22_Adult</defName>
+        <title>Runaway Synth</title>
+        <titleShort>Runaway</titleShort>
+        <baseDesc>[PAWN_nameDef] slipped out of the Institute with a serial number and nothing else. [PAWN_pronoun] still can't decide whether to have [PAWN_possessive] memories wiped for a clean start or keep them as proof of what was done to [PAWN_objective].</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_H2_22_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>2</Social>
+            <Intellectual>2</Intellectual>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- K1-98 -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_K1_98_Adult</defName>
+        <title>Hunted Synth</title>
+        <titleShort>Fugitive</titleShort>
+        <baseDesc>[PAWN_nameDef] has been on the run long enough to know every back alley between the Institute's hunters and the next safehouse. The Railroad is the only group that ever offered to help, so that's who [PAWN_pronoun] trusts.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_K1_98_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>3</Melee>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Harkness -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Harkness_Adult</defName>
+        <title>Rivet City Security Chief</title>
+        <titleShort>Security</titleShort>
+        <baseDesc>[PAWN_nameDef] runs security on Rivet City and believes [PAWN_pronoun] always has. The memory of an Institute escape was wiped and swapped for a life [PAWN_pronoun] never actually lived.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Harkness_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Melee>4</Melee>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
 </Defs>

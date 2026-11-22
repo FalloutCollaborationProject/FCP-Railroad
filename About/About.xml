@@ -8,6 +8,7 @@
     <name>FCP - The Railroad</name>
     <description>The Fallout Collaboration Project Presents: The Railroad, a Faction and Armory Mod.</description>
     <supportedVersions>
+        <li>1.6</li>
         <li>1.7</li>
     </supportedVersions>
     <modDependencies>
@@ -15,11 +16,6 @@
             <packageId>Rick.FCP.Core.Tools</packageId>
             <displayName>FCP - Tools</displayName>
             <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Tools</downloadUrl>
-        </li>
-        <li>
-            <packageId>Rick.FCP.Robotics</packageId>
-            <displayName>FCP - Robotics</displayName>
-            <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Robotics</downloadUrl>
         </li>
     </modDependencies>
     <loadAfter>

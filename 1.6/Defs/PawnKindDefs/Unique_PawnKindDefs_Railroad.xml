@@ -179,4 +179,152 @@
         <initialResistanceRange>25~35</initialResistanceRange>
     </PawnKindDef>
 
+    <!-- Ricky Dalton -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_RickyDalton</defName>
+        <label>Ricky Dalton</label>
+        <combatPower>100</combatPower>
+        <maxGenerationAge>33</maxGenerationAge>
+        <minGenerationAge>33</minGenerationAge>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Railroad_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_RickyDalton_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Old Man Stockton -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_Stockton</defName>
+        <label>Old Man Stockton</label>
+        <combatPower>30</combatPower>
+        <maxGenerationAge>68</maxGenerationAge>
+        <minGenerationAge>68</minGenerationAge>
+        <weaponMoney>200~400</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Railroad_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Stockton_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Victoria Watts -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_VictoriaWatts</defName>
+        <label>Victoria Watts</label>
+        <combatPower>100</combatPower>
+        <maxGenerationAge>38</maxGenerationAge>
+        <minGenerationAge>38</minGenerationAge>
+        <weaponMoney>600~900</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Railroad_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_VictoriaWatts_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- H2-22 -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_H2_22</defName>
+        <label>H2-22</label>
+        <combatPower>60</combatPower>
+        <maxGenerationAge>28</maxGenerationAge>
+        <minGenerationAge>28</minGenerationAge>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_EscapedSynth_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_H2_22_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- K1-98 -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_K1_98</defName>
+        <label>K1-98</label>
+        <combatPower>75</combatPower>
+        <maxGenerationAge>30</maxGenerationAge>
+        <minGenerationAge>30</minGenerationAge>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_EscapedSynth_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_K1_98_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Harkness -->
+
+    <PawnKindDef ParentName="FCP_RailroadKindBase">
+        <defName>FCP_Unique_Pawnkind_Harkness</defName>
+        <label>Harkness</label>
+        <combatPower>120</combatPower>
+        <maxGenerationAge>40</maxGenerationAge>
+        <minGenerationAge>40</minGenerationAge>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <forcedTraits Inherit="False" />
+        <weaponMoney>700~1000</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_EscapedSynth_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Harkness_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
 </Defs>

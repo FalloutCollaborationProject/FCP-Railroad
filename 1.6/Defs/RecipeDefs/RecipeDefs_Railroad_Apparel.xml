@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Railroad Apparel Recipes __________-->
+
+    <!-- Railroad Armored Coat -->
+
+    <RecipeDef>
+        <defName>FCP_Recipe_Make_Railroad_Armored_Coat</defName>
+        <label>make Railroad armored coat</label>
+        <description>Make a Railroad armored coat, steel plates sewn into the lining the way the Railroad's tinkers do it. Requires strong relations with the Railroad.</description>
+        <jobString>Making Railroad armored coat.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <workAmount>8700</workAmount>
+        <recipeUsers>
+            <li>FCP_Production_Armor_Workbench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Leather_Plain</li>
+                    </thingDefs>
+                </filter>
+                <count>70</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Railroad_Armored_Coat>1</FCP_Apparel_Railroad_Armored_Coat>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Railroad_Outfitters</researchPrerequisite>
+        <modExtensions>
+            <li Class="FCP.Factions.RecipeExtension_FactionGoodwillCheck">
+                <requireFaction>FCP_Faction_Railroad</requireFaction>
+                <minimumGoodwill>70</minimumGoodwill>
+                <uncraftableIfFactionDefeated>true</uncraftableIfFactionDefeated>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+</Defs>

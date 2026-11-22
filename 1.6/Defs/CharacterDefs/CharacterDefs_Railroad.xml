@@ -121,6 +121,9 @@
                 <headTypeDef>Female_AverageNormal</headTypeDef>
                 <bodyTypeDef>Female</bodyTypeDef>
             </li>
+            <li Class="FCP.Core.CharacterHediffDefinition" MayRequire="Rick.FCP.Institute">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
         </definitions>
     </FCP.Core.CharacterDef>
 
@@ -212,12 +215,9 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!--__________ P.A.M. __________-->
-    <!-- Personality construct housed on an Assaultron chassis, matching the Yes Man / Victor
-         robot-persona precedent set in FCP-Robotics: no faction, no story/rank definitions,
-         just a name on an existing chassis PawnKind. -->
+    <!-- P.A.M. -->
 
-    <FCP.Core.CharacterDef>
+    <FCP.Core.CharacterDef MayRequire="Rick.FCP.Robotics">
         <defName>FCP_Character_Railroad_PAM</defName>
         <label>P.A.M.</label>
         <description>The Railroad's Predictive Analytical Machine, a pre-war statistical modeling program salvaged and rehoused in a decommissioned assaultron chassis. It calculates probabilities for every operation it's fed, delivering cold percentages on missions that get agents killed either way. Whether it actually cares about the outcomes it predicts is a question nobody in the Railroad has gotten a straight answer to, and P.A.M. isn't in the habit of volunteering one.</description>
@@ -225,6 +225,174 @@
         <definitions>
             <li Class="FCP.Core.CharacterRobotNameDefinition">
                 <name>P.A.M.</name>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Ricky Dalton -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_RickyDalton</defName>
+        <pawnKind>FCP_Unique_Pawnkind_RickyDalton</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Ricky</firstName>
+                <lastName>Dalton</lastName>
+                <gender>Male</gender>
+                <age>33</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 35, 25)</hairColor>
+                <hairDef>FCP_Hair_Tunnel_Snake</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Railroad_Operative</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Old Man Stockton -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Stockton</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Stockton</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Old Man</firstName>
+                <lastName>Stockton</lastName>
+                <nickname>Old Man Stockton</nickname>
+                <gender>Male</gender>
+                <age>68</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(215, 215, 210)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Railroad_Conductor</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Victoria Watts -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_VictoriaWatts</defName>
+        <pawnKind>FCP_Unique_Pawnkind_VictoriaWatts</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Victoria</firstName>
+                <lastName>Watts</lastName>
+                <gender>Female</gender>
+                <age>38</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 70, 40)</hairColor>
+                <hairDef>FCP_Hair_Iron_Maiden</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Railroad_SeniorOperative</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- H2-22 -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_H2_22</defName>
+        <pawnKind>FCP_Unique_Pawnkind_H2_22</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>H2-22</firstName>
+                <lastName />
+                <gender>Female</gender>
+                <age>28</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Shaved_Female</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition" MayRequire="Rick.FCP.Institute">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- K1-98 -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_K1_98</defName>
+        <pawnKind>FCP_Unique_Pawnkind_K1_98</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>K1-98</firstName>
+                <lastName />
+                <gender>Female</gender>
+                <age>30</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 60, 35)</hairColor>
+                <hairDef>FCP_Hair_Unladylike</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(166, 133, 102)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition" MayRequire="Rick.FCP.Institute">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Harkness -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Railroad_Harkness</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Harkness</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Harkness</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 30, 25)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition" MayRequire="Rick.FCP.Institute">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
