@@ -1,8 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\1.6\Assemblies\FCP_Railroad.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.AssemblyInfoInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.AssemblyInfo.cs
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCPRailroad.sourcelink.json
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Railroad\Source\FCPRailroad\obj\Release\FCP_Railroad.dll
